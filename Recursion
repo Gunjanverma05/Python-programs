@@ -1,0 +1,16 @@
+Program to Print 1 to N using Recursion
+def print1ton(n):
+    #BASE CASE
+    if n == 1:
+        return 1
+
+    #INDUCTION HYPOTHESIS
+    smallOutput = print1ton(n-1)
+
+    #Step 3: INDUCTION STEP
+    print(n)
+    return
+
+
+n = int(input())
+print1ton(n)
